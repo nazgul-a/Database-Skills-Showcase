@@ -20,7 +20,6 @@ Database-Skills-Showcase/
 │ ├── NoSQL_Dataset.txt # Example MongoDB dataset
 │ ├── NoSQL_Queries.txt # MapReduce + Aggregation queries
 
-
 ---
 
 ## 📊 Highlights (Most Advanced Work)  
