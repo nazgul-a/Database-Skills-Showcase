@@ -1,79 +1,66 @@
-# Database Skills Showcase  
+# 📊 SQL & NoSQL Database Portfolio  
 
-This repository is a **collection of SQL, PL/SQL, LINQ, and NoSQL exercises** that demonstrate my ability to design databases, write complex queries, and work across both relational and non-relational systems.  
+This repository showcases a variety of **SQL, PL/SQL, LINQ, and NoSQL exercises** that demonstrate database design, querying, and data manipulation skills.  
 
-It is not a single cohesive project but rather a **skills portfolio**, covering everything from schema design and data insertion to advanced queries, stored procedures, triggers, and NoSQL operations.  
+The work includes:  
+- Relational schema creation with constraints  
+- Analytical SQL queries with joins, aggregations, and subqueries  
+- PL/SQL triggers and stored procedures  
+- LINQ queries for relational data access  
+- NoSQL collections and queries  
+
+✨ While these scripts come from individual coursework exercises (not a single cohesive app), they collectively highlight a broad set of **database engineering skills**.  
 
 ---
 
 ## 📂 Repository Structure  
 
-Database-Skills-Showcase/
-│
-├── relational/
-│ ├── Database.sql # Schema + inserts for university DB
-│ ├── Analytical_SQL_Queries.sql # Complex SQL queries for analysis
-│ ├── PLSQL_Procedures_And_Triggers.sql # PL/SQL procedures, triggers, functions, cursors
-│ ├── LINQ.linq # LINQ-to-SQL queries in C# style
-│
-├── nosql/
-│ ├── NoSQL_Dataset.txt # Example MongoDB dataset
-│ ├── NoSQL_Queries.txt # MapReduce + Aggregation queries
+      ── relational/
+          ── Database.sql 
+          ── SQL_Queries.sql 
+          ── PLSQL_Procedures_And_Triggers.sql
+          ── LINQ.linq 
+    
+      ── nosql/
+          ── NoSQL_Collection.txt 
+          ── NoSQL_Queries.txt 
 
 ---
 
-## 📊 Highlights (Most Advanced Work)  
+## 🔹 Relational SQL  
 
-- **Recursive & Aggregated Queries** → Find faculty supervising the maximum students, handle ties, aggregate student names into one row.  
-- **PL/SQL Triggers & Procedures** → Automated checks (e.g., prevent duplicate enrollments), salary-based faculty insertion procedure, reusable cursors.  
-- **NoSQL MapReduce & Aggregation Pipelines** → Calculate averages (e.g., dragon weights by gender), showcase proficiency with MongoDB’s two querying approaches.  
+- **[Database.sql](relational/Database.sql)**  
+  Schema definition for a **university database** with students, faculty, courses, and enrollment. Includes primary/foreign keys and sample inserts.  
 
----
+- **[Analytical_SQL_Queries.sql](relational/Analytical_SQL_Queries.sql)**  
+  Complex SQL queries for real-world scenarios such as:  
+  - Listing students enrolled in certain terms  
+  - Calculating total building capacity  
+  - Identifying top faculty supervisors  
+  - Ranking students by credits earned  
 
-## 🗄️ Relational (Oracle SQL & PL/SQL)  
+- **[PLSQL_Procedures_And_Triggers.sql](relational/PLSQL_Procedures_And_Triggers.sql)**  
+  Demonstrates procedural SQL with stored procedures, triggers, and exception handling.  
 
-- **Database.sql** → Full schema for a university-style database (tables, constraints, insert statements).  
-- **Analytical_SQL_Queries.sql** → Advanced queries such as:  
-  - Students with highest total credits  
-  - Supervisors with maximum students  
-  - Courses offered multiple days a week  
-  - Building capacity analysis  
-- **PLSQL_Procedures_And_Triggers.sql** → Includes:  
-  - **Triggers** for enforcing business rules  
-  - **Stored procedures** with input parameters  
-  - **Cursors & functions** for reusable logic  
-- **LINQ.linq** → Querying relational DB with C#/LINQ, e.g.:  
-  - Filter faculty by salary  
-  - Join student/faculty tables  
-  - Group students by supervisor  
+- **[LINQ.linq](relational/LINQ.linq)**  
+  LINQ queries showcasing cross-language querying of the relational database.  
 
 ---
 
-## 📊 NoSQL (MongoDB)  
+## 🔹 NoSQL  
 
-- **NoSQL_Dataset.txt** → Sample unstructured data (dragons 🐉).  
-- **NoSQL_Queries.txt** → Examples include:  
-  - `mapReduce` functions to group & average values  
-  - Aggregation pipelines for filtering and summarizing  
+- **[NoSQL_Dataset.txt](nosql/NoSQL_Dataset.txt)**  
+  Example of a NoSQL collection schema in JSON-like format.  
 
----
-
-## 🚀 Skills Demonstrated  
-
-✔ Database schema design & normalization  
-✔ Complex SQL queries for reporting & analytics  
-✔ PL/SQL triggers, procedures, functions, and cursors  
-✔ Querying relational data via **LINQ-to-SQL (C#)**  
-✔ MongoDB queries using both **mapReduce** and modern **aggregation pipelines**  
-✔ Applying both relational and non-relational approaches to data  
+- **[NoSQL_Queries.txt](nosql/NoSQL_Queries.txt)**  
+  CRUD operations and query examples for NoSQL data.  
 
 ---
 
-## 🔍 Why This Repo?  
+## ✅ Skills Demonstrated  
 
-This collection showcases my **breadth of database knowledge** across different paradigms and tools.  
-
-Together, these exercises demonstrate my ability to:  
-- Design and populate relational databases  
-- Query using SQL, PL/SQL, and LINQ  
-- Work with NoSQL systems using both classic and modern querying styles  
+- Relational database design (DDL, constraints, normalization)  
+- SQL query writing (joins, aggregations, subqueries, set operations)  
+- PL/SQL procedural programming (stored procs, triggers, control flow)  
+- LINQ for querying relational databases from .NET environments  
+- NoSQL modeling and queries (document-based approach)  
