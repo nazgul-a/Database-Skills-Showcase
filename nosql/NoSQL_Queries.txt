@@ -1,0 +1,29 @@
+// mapReduce
+// to generate a report based on the gender-wise average weight
+
+var map = function() {
+emit({gender: this.gender}, {weight: this.weight, count: 1});}
+
+var reduce = function(key, values) {
+var sum = 0; var count = 0;
+values.forEach(function(value) {
+sum += value.weight;
+count += value.count;});
+var avg = sum / count;
+return {avg_weight: avg};}
+
+db.dragons.mapReduce(map, reduce, {out: "dragons_gender_weight"});
+
+db.dragons_gender_weight.find()
+
+
+
+
+// Aggregate
+// to generate a report based on the gender-wise average weight
+
+db.dragons.aggregate([
+{$group: {_id: "$gender", avg: {$avg: "$weight"}}},
+{$out: "dragons_average_weight"}])
+
+db.dragons_average_weight.find()
